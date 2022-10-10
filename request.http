@@ -6,8 +6,11 @@ POST http://localhost:8000/launches HTTP/1.1
 content-type: application/json
 
 {
-    "mission":"ZTM160",
+    "mission":"KO-1",
     "rocket":"ZTM Starship",
     "target":"Kepler-62 f",
     "launchDate":"July 1, 2028"
 }
+###
+DELETE http://localhost:8000/launches/105 HTTP/1.1
+content-type: application/json
