@@ -14,3 +14,27 @@ content-type: application/json
 ###
 DELETE http://localhost:8000/launches/105 HTTP/1.1
 content-type: application/json
+###
+POST https://api.spacexdata.com/v4/launches/query HTTP/1.1
+content-type: application/json
+
+{
+    "query":{},
+    "options":{
+        "populate":[
+           {
+            "path":"rocket",
+            "select":{
+                "name":1
+            }
+           },
+           {
+            "path":"payloads",
+            "select":{
+                "customers":1
+            }
+           }
+
+        ]
+    }
+}
