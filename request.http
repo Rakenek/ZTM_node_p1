@@ -38,3 +38,5 @@ content-type: application/json
         ]
     }
 }
+###
+GET http://localhost:8000/v1/launches?limit=5&page=2 HTTP/1.1
