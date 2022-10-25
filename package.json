@@ -9,7 +9,9 @@
     "watch": "concurrently \"npm run server \" \"npm run client\"",
     "test": "npm test --prefix server && npm test --prefix client",
     "deploy": "npm run build --prefix client && npm run watch --prefix server",
-    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server"
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+    "install-client": "npm install --prefix client",
+    "install-server": "npm install --prefix server"
   },
   "keywords": [],
   "author": "",
